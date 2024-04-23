@@ -4,18 +4,25 @@
  * Descomenta progresivamente el código del archivo main.c y comprueba que el programa funciona correctamente.
  */
 
-//#include "arrayplustad.h"
-#define TAM 5
+#include "arrayplustad.h"
+#include <stdio.h>
+#include <stdlib.h>
+#define TAM 7
 
 /*
  * Programa para demostrar el uso del TAD ArrayPlus.
  */
 int main() {
-
+    //Crea el ArrayPlus vací
+    int array[2] = {1,2};
+    int *p = &array;
+    arrayplustad *miArrayPlus = creaArrayPlus(TAM);
+   /* anyadeElemento(miArrayPlus,12);
+    anyadeArray(*miArrayPlus, p,2);
+    imprimeArrayPlus(miArrayPlus);*/
+    return 0;
+}
 /*
-    // Crea el ArrayPlus vacío
-    ArrayPlusTAD *miArrayPlus = creaArrayPlus(TAM * 2);
-
     // Rellena el ArrayPlus con valores individuales
     for (int i = 0; i < TAM; i++) {
         anyadeElemento(miArrayPlus, i);
@@ -39,6 +46,6 @@ int main() {
 
     // Libera la memoria del ArrayPlus
     liberaArrayPlus(miArrayPlus);
-*/
+
     return 0;
-}
+}*/
